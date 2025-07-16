@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nagaraj - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-            font-family: 'Bebas',sans-serif ;
+            font-family: "Bebas Neue", sans-serif;
         }
-        body{
+
+        body {
             background-color: rgb(28, 1, 39);
             color: white;
         }
-        nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 65px;
+            background-color: rgb(87, 11, 117);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
-            list-style: ;
-            margin: 45px;
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        .left {
+            padding:0 20px;
+            font-size: 1.5rem;
+        }
+
+        .firstsection{
+           display: flex;
+           justify-content: space-around;
+           margin: 25px 0;
+        }
+
+        .firstsection div{
+           
+            width: 35%;
+        }
+        
+        .leftsection {
+            background-color: rgb(255, 127, 127);
+            width : 30px;
+        }
+
+        .rightsection{
+            background-color: rgb(255, 127, 127);
+            width : 30px;
         }
     </style>
 </head>
+
 <body>
-     <header>
+    <header>
         <nav>
-            <div class="right">Nagaraj's Portfolio</div>
-            <div class="left"></div>
+            <div class="left">Nagaraj's Portfolio</div>
+            <div class="right"></div>
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -42,6 +79,20 @@
                 <li>Contact Me</li>
             </ul>
         </nav>
-     </header>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hello, my name is Nagraj
+            </div>
+                <div>I am a developper</div>
+            <div class="rightsection">
+                right
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
