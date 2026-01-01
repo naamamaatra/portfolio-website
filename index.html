@@ -1,98 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagaraj - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: "Bebas Neue", sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virat Kohli | Indian Cricket Legend</title>
 
-        body {
-            background-color: rgb(28, 1, 39);
-            color: white;
-        }
+<style>
+/* ---------- GLOBAL ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
 
-        nav {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 65px;
-            background-color: rgb(87, 11, 117);
-        }
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    line-height: 1.6;
+}
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+/* ---------- HEADER ---------- */
+header {
+    padding: 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
 
-        nav ul li {
-            list-style: none;
-            margin: 0 25px;
-        }
+header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+}
 
-        .left {
-            padding:0 20px;
-            font-size: 1.5rem;
-        }
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
 
-        .firstsection{
-           display: flex;
-           justify-content: space-around;
-           margin: 25px 0;
-        }
+/* ---------- NAV ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.6);
+}
 
-        .firstsection div{
-           
-            width: 35%;
-        }
-        
-        .leftsection {
-            background-color: rgb(255, 127, 127);
-            width : 30px;
-        }
+nav a {
+    padding: 14px 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        .rightsection{
-            background-color: rgb(255, 127, 127);
-            width : 30px;
-        }
-    </style>
+nav a:hover {
+    background: #ff9800;
+    color: #000;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* ---------- GLASS CARD ---------- */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffca28;
+}
+
+/* ---------- IMAGE ---------- */
+.profile-img {
+    display: block;
+    margin: 25px auto;
+    width: 260px;
+    border-radius: 50%;
+    border: 6px solid #ff9800;
+}
+
+/* ---------- LIST ---------- */
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* ---------- VIDEO ---------- */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 12px;
+    border: 4px solid #ff9800;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+}
+</style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Nagaraj's Portfolio</div>
-            <div class="right"></div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
-            </ul>
-        </nav>
-    </header>
 
+<header>
+    <h1>Virat Kohli</h1>
+    <p>The Run Machine of Indian Cricket</p>
+</header>
 
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hello, my name is Nagraj
-            </div>
-                <div>I am a developper </div>
-            <div class="rightsection">
-                right
-            </div>
-        </section>
-    </main>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#early">Early Life</a>
+    <a href="#career">Career</a>
+    <a href="#records">Records</a>
+    <a href="#video">On Ground</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <div class="card">
+        <h2 class="section-title">About Virat Kohli</h2>
+        <img class="profile-img" src="https://www.britannica.com/biography/Virat-Kohli" alt="Virat Kohli">
+        <p>
+            Virat Kohli is one of the greatest batsmen in the history of cricket.
+            Known for his aggressive mindset, unmatched consistency, and elite
+            fitness levels, he has redefined modern-day batting across formats.
+        </p>
+    </div>
+</section>
+
+<!-- EARLY LIFE -->
+<section id="early">
+    <div class="card">
+        <h2 class="section-title">Early Life</h2>
+        <p>
+            Born on <strong>5 November 1988</strong> in Delhi, Virat Kohli showed
+            early promise in cricket. He trained at the West Delhi Cricket Academy
+            and led India to victory in the <strong>2008 ICC Under-19 World Cup</strong>.
+        </p>
+    </div>
+</section>
+
+<!-- CAREER -->
+<section id="career">
+    <div class="card">
+        <h2 class="section-title">International Career</h2>
+        <p>
+            Virat made his ODI debut in 2008 and soon became India’s backbone.
+            As captain, he transformed India into a dominant Test side and led
+            with intensity and passion.
+        </p>
+        <ul>
+            <li>Former Captain – India (Tests, ODIs, T20Is)</li>
+            <li>Plays for Royal Challengers Bangalore (IPL)</li>
+            <li>Known for chases and match-winning knocks</li>
+        </ul>
+    </div>
+</section>
+
+<!-- RECORDS -->
+<section id="records">
+    <div class="card">
+        <h2 class="section-title">Achievements & Records</h2>
+        <ul>
+            <li>Fastest to 8,000 – 13,000 ODI runs</li>
+            <li>Most centuries while chasing in ODIs</li>
+            <li>Multiple ICC Player of the Year awards</li>
+            <li>Padma Shri & Rajiv Gandhi Khel Ratna Award</li>
+        </ul>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+    <div class="card">
+        <h2 class="section-title">Virat Kohli On the Ground</h2>
+        <p style="text-align:center;">
+            Watch Virat Kohli in action showcasing his on-ground dominance and
+            legendary batting skills.
+        </p>
+
+        <div class="video-container">
+            <video controls>
+                <source src="https://youtu.be/nCTUP7-tLrU?si=kRmZJIzV8copyt3u" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="card">
+        <h2 class="section-title">Contact Information</h2>
+        <p><strong>Email:</strong> viratkohli@example.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Office:</strong><br>
+            Virat Kohli Foundation,<br>
+            New Delhi, India
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Virat Kohli | Educational Web Project</p>
+</footer>
+
 </body>
-
 </html>
